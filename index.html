@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Zone Converter</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      background-image: url('https://source.unsplash.com/1600x900/?time,clock');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="converter">
+    <h2><i class="fas fa-clock"></i> Time Zone Converter</h2>
+
+    <label for="timezoneInput">Select Time Zone:</label>
+    <input type="text" id="searchInput" placeholder="Search time zones..." onkeyup="filterTimeZones()">
+    <select id="timezoneInput"></select>
+
+    <button id="addButton"><i class="fas fa-plus"></i> Add</button>
+    <div id="textbox"></div>
+    <button id="convertButton"><i class="fas fa-sync-alt"></i> Convert</button>
+  </div>
+
+  
+
+  <div class="display-zones">
+    <h3>Current Times in Multiple Zones</h3>
+    <div id="timeZones"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
